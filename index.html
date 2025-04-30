@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KJ Logistics and Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>KJ Logistics and Delivery</h1>
+    <p>Worldwide Parcel Delivery with Speed and Care</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#track">Track</a>
+  </nav>
+  <div class="hero">Your Global Delivery Partner</div>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We deliver parcels globally with speed and security.</p>
+  </section>
+
+  <section id="track">
+    <h2>Track Your Parcel</h2>
+    <button onclick="generateTrackingCode()">Generate Tracking Code</button>
+<p id="generatedCode"></p>
+<form onsubmit="trackParcel(event)">
+      <input type="text" id="tracking" placeholder="Enter Tracking Number" required>
+      <button type="submit">Track</button>
+    </form>
+    <p id="trackingResult"></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 KJ Logistics. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
